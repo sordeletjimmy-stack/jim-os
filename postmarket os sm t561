@@ -1,0 +1,39 @@
+========================================================================
+postmarketOS (Openbox) for Samsung Galaxy Tab E 9.6 (SM-T561 / gtel3g)
+ by Jimmy
+========================================================================
+
+CONTENU DU PACK / PACKAGE CONTENTS :
+- boot.img     : Noyau Linux postmarketOS (nura)3.10.17 + initramfs (root=/dev/mmcblk0p26)
+- userdata.img : Image système complète au format Android Sparse (ext4 32-bit)
+
+PRÉREQUIS / REQUIREMENTS :
+- Samsung Galaxy Tab E 9.6 (SM-T561)
+- Recovery custom TWRP installé sur la tablette
+- PC sous Linux/macOS avec heimdal, adb et simg2img (android-tools)
+
+------------------------------------------------------------------------
+ INSTALLATION (MÉMOIRE INTERNE SANS CARTE SD)
+------------------------------------------------------------------------
+
+1. FLASHER LE NOYAU (MODE DOWNLOAD) :
+   - Éteignez la tablette et retirez toute carte microSD.
+   - Maintenez [Volume Bas + Home + Power], puis appuyez sur [Volume Haut].ou si vous avez twrp
+   - Branchez le câble USB au PC et exécutez :
+     heimdall flash sous linux --KERNEL boot.img
+
+
+2. INSTALLER LE SYSTÈME SUR LA PARTITION INTERNE (SOUS TWRP) :
+   - Redémarrez sous TWRP en maintenant [Volume Haut + Home + Power].
+   - Restez sur l écran d accueil de TWRP (câble USB branché).
+   - Sur le PC, décompressez l image sparse et écrivez-la sur mmcblk0p26 :
+
+     simg2img userdata.img userdata_raw.img
+     adb shell "umount /data /sdcard 2>/dev/null"
+     adb exec-in "dd of=/dev/block/mmcblk0p26 bs=4M" < userdata_raw.img
+     adb shell "sync"
+     rm -f userdata_raw.img  (j'ai faits plusieurs essai donc je devais supprimer derriere) optionnel
+
+3. DÉMARRAGE :
+   - Dans TWRP, appuyez sur [Reboot] -> [System] (Do Not Install TWRP app).
+   - Patientez : le bureau postmarketOS démarre en mémoire interne.
