@@ -103,3 +103,7 @@ Le script va automatiquement :
 * **Applications recommandées :** Privilégiez les applications légères déjà installées (**Dillo**, **PCManFM**, **LXTerminal**, **Mousepad**, **Viewnior**, **mpv**). Évitez les logiciels GTK4 ou Electron qui dépassent la capacité du noyau `3.10.17` et des 1,5 Go de RAM.
 * **Connexion USB directe depuis un PC Linux :** Si vous rebranchez la tablette en USB plus tard, son adresse IP USB reste `172.16.42.1` (avec le serveur SSH léger **Dropbear** actif).
 
+
+
+
+j'ai mis deux roms compatibles avec sm t561 en zip et twrp compatible sm t561 
