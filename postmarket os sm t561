@@ -23,10 +23,10 @@ PRÉREQUIS / REQUIREMENTS :
      heimdall flash sous linux --KERNEL boot.img
 
 
-2. INSTALLER LE SYSTÈME SUR LA PARTITION INTERNE (SOUS TWRP) :
+2. INSTALLER LE SYSTÈME SUR LA PARTITION INTERNE (SOUS TWRP) :lien de la tablette twrp dans le zip 
    - Redémarrez sous TWRP en maintenant [Volume Haut + Home + Power].
    - Restez sur l écran d accueil de TWRP (câble USB branché).
-   - Sur le PC, décompressez l image sparse et écrivez-la sur mmcblk0p26 :
+   - Sur le PC, décompressez l image sparse et écrivez-la sur mmcblk0p26 pour moi c'etait sa :
 
      simg2img userdata.img userdata_raw.img
      adb shell "umount /data /sdcard 2>/dev/null"
