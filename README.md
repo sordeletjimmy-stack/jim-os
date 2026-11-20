@@ -2,6 +2,8 @@ postmarketOS (Openbox) for Samsung Galaxy Tab E 9.6 (SM-T561 / gtel3g)
  by Jimmy
 # Samsung Galaxy Tab E (SM-T561 / `gtel3g`) — Guide Interface / Wi-Fi sous postmarketOS
 
+reprise du dépôt qui etait déjà sur postmarket os .mais c'était en travaux .jeu essayé de reprendre le projet .
+
 Ce dépôt et cette archive contiennent tout le nécessaire pour transformer une **Samsung Galaxy Tab E 9.6 3G (SM-T561)** sous **postmarketOS** (noyau Linux `3.10.17`) en une tablette Linux légère, tactile, (~150 Mo de RAM utilisés au repos) et 100 % autonome en Wi-Fi.
 
 ---encore du boulot pour le son , bluetooh ect.... mais le wif iest stable pour l'instant 
