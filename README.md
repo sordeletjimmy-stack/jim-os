@@ -1,3 +1,4 @@
+<img width="2252" height="4000" alt="2635" src="https://github.com/user-attachments/assets/9c4fa427-ae34-45c9-aa1b-e847b83628c9" />
 postmarketOS (Openbox) for Samsung Galaxy Tab E 9.6 (SM-T561 / gtel3g)
  by Jimmy
 # Samsung Galaxy Tab E (SM-T561 / `gtel3g`) — Guide Interface / Wi-Fi sous postmarketOS
